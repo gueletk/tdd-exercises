@@ -14,5 +14,9 @@ describe StringCalculator do
     it "returns the given number when given one number" do
       expect(@calculator.add("34")).to eq(34)
     end
+
+    it "returns sum when given two numbers" do
+      expect(@calculator.add("25,15")).to eq(40)
+    end
   end
 end
