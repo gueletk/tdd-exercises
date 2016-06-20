@@ -1,11 +1,11 @@
 class StringCalculator
 
-  def initialize(input)
-    @numbers = input.split(",")
+  def initialize()
   end
 
-  def add
-    return @numbers.reduce(0, :+)
+  def add(input)
+    numbers = input.split(",").map(&:to_i)
+    numbers.reduce(0, :+)
   end
 
 end
