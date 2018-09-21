@@ -1,6 +1,7 @@
 class StringCalculator
 
   def initialize()
+    print('test')
   end
 
   def add(input)
